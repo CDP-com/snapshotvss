@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest productname="snapshotsvss" version="1">
+    <pubdate>7/30/15 10:59 AM</pubdate>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/snapshotsvss.js</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\snapshotsvss.js</dest>
+        <hash type="MD5">AA6838384EF259E63A3FC1699867E378</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/index.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\index.html</dest>
+        <hash type="MD5">1A40D1CB8D27C1533E8EF6EC9CD01F96</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CDPPreviousVersionsTab.png</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CDPPreviousVersionsTab.png</dest>
+        <hash type="MD5">C3F6B926584507DD154728967D1D354B</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CDPs Previous Versions for Windows 8 - Google Drive.URL</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CDPs Previous Versions for Windows 8 - Google Drive.URL</dest>
+        <hash type="MD5">E705A135B6023D46D62E6C1B03585874</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/COPY CreateVSSSnapshot to MoM .bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\COPY CreateVSSSnapshot to MoM .bat</dest>
+        <hash type="MD5">FDA84E66FED17F93074C2635F6517EA9</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CreateSS.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CreateSS.bat</dest>
+        <hash type="MD5">1AA680DED26F04D493DD2AB6907A6BA8</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CreateSS.js</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CreateSS.js</dest>
+        <hash type="MD5">06F3BF9A42F961FCDAC42724113FF53A</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CreateSS.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CreateSS.lnk</dest>
+        <hash type="MD5">64326D00A97F2CCC49DB7518331CD6E7</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/CreateSS.ps1</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\CreateSS.ps1</dest>
+        <hash type="MD5">89B69B4AF23D5E0F86F6BBBD1A7D6A8E</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/custom-style.css</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\custom-style.css</dest>
+        <hash type="MD5">4CEF858EA79DD97415F4D1D6B0F232DE</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/Enable_Admin_Acc.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\Enable_Admin_Acc.bat</dest>
+        <hash type="MD5">369D5AC32CE952ECA7F28FCCEDF3651E</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/Install just SnapshotsVSS in public.exe</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\Install just SnapshotsVSS in public.exe</dest>
+        <hash type="MD5">0E234BCB4A7E68424F0FABF99458CE9F</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ListSS.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ListSS.bat</dest>
+        <hash type="MD5">1C34ECBF5D73F860495336EE51606851</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ListSS.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ListSS.lnk</dest>
+        <hash type="MD5">4F9ECDEEBCDFDF2EE8EFDA6F8E88B4CE</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ListSS.ps1</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ListSS.ps1</dest>
+        <hash type="MD5">F3CA1E252F67CB922B83C2E1790FEA8A</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/LISTSSF KEEP.BAT</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\LISTSSF KEEP.BAT</dest>
+        <hash type="MD5">AB6276B12EEE47EB667AEF28C0047105</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/LISTSSF-KEEP.BAT</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\LISTSSF-KEEP.BAT</dest>
+        <hash type="MD5">AB6276B12EEE47EB667AEF28C0047105</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ListSSF.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ListSSF.bat</dest>
+        <hash type="MD5">AB6276B12EEE47EB667AEF28C0047105</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ListSS_F.ps1</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ListSS_F.ps1</dest>
+        <hash type="MD5">556B68DF3D50673422F7C65636C086CA</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/main.hta</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\main.hta</dest>
+        <hash type="MD5">2A62505C52056803B4A84EB59DFF7EFE</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/main.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\main.html</dest>
+        <hash type="MD5">C2A3AEF7CBD3F9983B320058813F93F4</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/README.md</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\README.md</dest>
+        <hash type="MD5">5EB03221121D3712BC63BDCBB4FF582F</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/sample-lib.js</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\sample-lib.js</dest>
+        <hash type="MD5">DE5560ABA7670D64073A0509F5B93727</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ScheduleSS.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ScheduleSS.bat</dest>
+        <hash type="MD5">993CD83664362433ED402D0ACD00076E</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ScheduleSS.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ScheduleSS.lnk</dest>
+        <hash type="MD5">2F621BCF446F33509DCEB514BBB7B907</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ShowSS - Shortcut.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ShowSS - Shortcut.lnk</dest>
+        <hash type="MD5">063972ABE7EB8C413B49D798EBED99D1</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ShowSS.bat</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ShowSS.bat</dest>
+        <hash type="MD5">992B7C979D889808724E78020933AB6B</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ShowSS.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ShowSS.lnk</dest>
+        <hash type="MD5">ADCB8B55E6DDDAD0E27CF8FFFFC03A59</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ShowSS.ps1</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ShowSS.ps1</dest>
+        <hash type="MD5">35DF4C0D3F09FDF9BDDFC2BCB0DC8F39</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/SnapshotsVSS-Admin.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\SnapshotsVSS-Admin.lnk</dest>
+        <hash type="MD5">EB79763D02DC5F5FAF38204FDD1CC72D</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/SnapshotsVSS.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\SnapshotsVSS.lnk</dest>
+        <hash type="MD5">54312C08A7B4DE5BC805A87EE2C3AEEA</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ss.txt</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ss.txt</dest>
+        <hash type="MD5">D41D8CD98F00B204E9800998ECF8427E</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/ss_id.txt</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\ss_id.txt</dest>
+        <hash type="MD5">730F8209D56C2BE3FC8E01B91A723D19</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/{84E9CEF9-5B91-4787-82E8-1F86A46EDA7D}  12.08.2014 16.30.58.txt</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\{84E9CEF9-5B91-4787-82E8-1F86A46EDA7D}  12.08.2014 16.30.58.txt</dest>
+        <hash type="MD5">D41D8CD98F00B204E9800998ECF8427E</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/snapshotsvsslib.js</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\snapshotsvsslib.js</dest>
+        <hash type="MD5">55447BD78BF07B70CADD9DF56AE05646</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/enable_admin_acc.lnk</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\enable_admin_acc.lnk</dest>
+        <hash type="MD5">F471181DB63EE1AEA8A166414DBF29F3</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/deny.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\deny.html</dest>
+        <hash type="MD5">3210A7AF55C01FBF8BD042F5D42ECF28</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/pipedown.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\pipedown.html</dest>
+        <hash type="MD5">A00CB00CDEA7B3CFD5CA02019143906B</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/unknown.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\unknown.html</dest>
+        <hash type="MD5">0D56839728B6A2414900F8F17B53421C</hash>
+    </file>
+    <file>
+        <source>http://snapback-apps.com/snapshotsvss/updating.html</source>
+        <dest>%ALLUSERSPROFILE%\CDP\SnapBack\APPs\snapshotsvss\updating.html</dest>
+        <hash type="MD5">7503FF85F18AE4BED7CDB51E3EF42E0B</hash>
+    </file>
+    <buttons>
+        <name>createss</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\runapp.js" "file:///%allusersprofile%/cdp/snapback/apps/snapshotsvss/createss.lnk"</command>
+    </buttons>
+    <buttons>
+        <name>showss</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\runapp.js" "file:///C:/programdata/cdp/snapback/apps/snapshotsvss/showss.lnk"</command>
+    </buttons>
+    <buttons>
+        <name>listss</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\runapp.js" "file:///C:/programdata/cdp/snapback/apps/snapshotsvss/listss.lnk"</command>
+    </buttons>
+    <buttons>
+        <name>scheduless</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\runapp.js" "file:///C:/programdata/cdp/snapback/apps/snapshotsvss/scheduless.lnk"</command>
+    </buttons>
+    <buttons>
+        <name>enableadmin</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\runapp.js" "file:///C:/programdata/cdp/snapback/apps/snapshotsvss/enable_admin_acc.lnk"</command>
+    </buttons>
+    <buttons>
+        <name>openremote</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>no</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\openremotepg.js"</command>
+    </buttons>
+    <buttons>
+        <name>takemelocal</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\golocal.js"</command>
+    </buttons>
+    <buttons>
+        <name>updateapp</name>
+        <adminreq>false</adminreq>
+        <default>false</default>
+        <ui>yes</ui>
+        <command>wscript //nologo "%ALLUSERSPROFILE%\cdp\snapback\apps\common\scripts\updatefly.js" "snapshotsvss"</command>
+    </buttons><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-620875415"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>r4irEVQJGVfgEgVQ8J7Ec8UqqJo=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties-926444332"><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>EejMYIqhBaX3l6IoZF6XGzShgY4=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue-1449143848">2Q1YgS6ie4bdQumr9YUVTgm+Qn7+evTaZqxsxzqwINeDjnWS2Gk6q+WCaBMS9NzUfT/rA+CXrnG4otcwWJjErIl/rTasGjI1crDXrneRnhL12Tvl+5mMV5JwWPfrotkK5LtfcFsjA3lI7dBhiSOJlus0lARmKy0EM1e8dsVs306iLjXvpLdmDsWTB1RhlHLvHfDp2F3mCnSM3u/O9UpgGyib34sMwVxjR5Ez9d2LYkjoYTiB7EMb3py3lGiIcTgnVk6JDI32X4cGxuQw8WldAFSQUlOqs1sGk40EWo2jnaSSCD3hUvxuEkFUsk2FslAa00vfV3qQUlYtBQ21vqzCmQ==</ds:SignatureValue><ds:KeyInfo><ds:KeyValue><ds:RSAKeyValue><ds:Modulus>3aP9ZkN7+sST+pkWDg2HN0zg++Q0F9ArpGpqJJEog74FLBPKpmFgakQDaM6AIl5fzRknIuSz71a4s1PnRlR1CYAsFGspnzaVFp8DMIXUaRs2YvPW3Phm/+Wg8exTtLpdgNRte4UtAZbJ68oxAgTYFoluArCZDO59mKUMgcGUTvGOU4R4ym9QchVnIZlW5oPRW8LtRdQP0CXIFYUgrBqQw819L+ZcEfXpFcJV2XPu+YQp4Ln9hLVpbKZZpZ+EAAe9HJ0dZiCUE6DwFzsdPgonjGAEUBkwmVpPbCRyC9a6ghqpuALUnB3rOLppGvWiu0Bd7daTmqWZE+1K6JVRPB91FQ==</ds:Modulus><ds:Exponent>AQAB</ds:Exponent></ds:RSAKeyValue></ds:KeyValue><ds:X509Data><ds:X509Certificate>MIIFIjCCBAqgAwIBAgIQD6ES90EqIV1n4nlw3tpCGjANBgkqhkiG9w0BAQsFADB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTAeFw0xNTA0MjgwMDAwMDBaFw0xNjA1MjMyMzU5NTlaMIGJMQswCQYDVQQGEwJVUzEQMA4GA1UECBMHRmxvcmlkYTEaMBgGA1UEBxMRQWx0YW1vbnRlIFNwcmluZ3MxJTAjBgNVBAoUHENvbHVtYmlhIERhdGEgUHJvZHVjdHMsIEluYy4xJTAjBgNVBAMUHENvbHVtYmlhIERhdGEgUHJvZHVjdHMsIEluYy4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDdo/1mQ3v6xJP6mRYODYc3TOD75DQX0CukamokkSiDvgUsE8qmYWBqRANozoAiXl/NGSci5LPvVrizU+dGVHUJgCwUaymfNpUWnwMwhdRpGzZi89bc+Gb/5aDx7FO0ul2A1G17hS0BlsnryjECBNgWiW4CsJkM7n2YpQyBwZRO8Y5ThHjKb1ByFWchmVbmg9Fbwu1F1A/QJcgVhSCsGpDDzX0v5lwR9ekVwlXZc+75hCnguf2EtWlsplmln4QAB70cnR1mIJQToPAXOx0+CieMYARQGTCZWk9sJHIL1rqCGqm4AtScHes4umka9aK7QF3t1pOapZkT7UrolVE8H3UVAgMBAAGjggGNMIIBiTAJBgNVHRMEAjAAMA4GA1UdDwEB/wQEAwIHgDArBgNVHR8EJDAiMCCgHqAchhpodHRwOi8vc3Yuc3ltY2IuY29tL3N2LmNybDBmBgNVHSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkMF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMBMGA1UdJQQMMAoGCCsGAQUFBwMDMFcGCCsGAQUFBwEBBEswSTAfBggrBgEFBQcwAYYTaHR0cDovL3N2LnN5bWNkLmNvbTAmBggrBgEFBQcwAoYaaHR0cDovL3N2LnN5bWNiLmNvbS9zdi5jcnQwHwYDVR0jBBgwFoAUljtT8Hkzl699g+8uK8zKt4YecmYwHQYDVR0OBBYEFLQ3Ihgx3dQ+9i3DAH7nHm5b84+VMBEGCWCGSAGG+EIBAQQEAwIEEDAWBgorBgEEAYI3AgEbBAgwBgEBAAEB/zANBgkqhkiG9w0BAQsFAAOCAQEAjeZoANk5OPoOVIK4DyS7Sptlr0jvLOlN2KyRDLhEDqxJ13dAGV6VEovBbewCxVgyiRaMTJpdHMJO8O7UMtICeHJ4yM02DTQozDbKfixwnBa7eitob4V4nq2w+c4IgYQ+3R4hsZjVxDmOq2YUKLtEqYkCpleHmsQyuTmObVf2oMMNkkBtQ5lB1n2HpLZ5yOPTOsFHpSuznSEEcMaJKCDVpO922tJVbqbNbjuk3KVZvPTNlXMRPYNe8kkTTB+sCRGpuGNhybdJfucVZUxZdJyz0VVwZxfW2UNH2D+ZtbsKxiphJozt8yAMY8GY5DnMT9w/IdkSIw8aJnSGM8JndS0ejw==</ds:X509Certificate><ds:X509Certificate>MIIE0zCCA7ugAwIBAgIQGNrRniZ96LtKIVjNzGs7SjANBgkqhkiG9w0BAQUFADCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwHhcNMDYxMTA4MDAwMDAwWhcNMzYwNzE2MjM1OTU5WjCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvJAgIKXo1nmAMqudLO07cfLw8RRy7K+D+KQL5VwijZIUVJ/XxrcgxiV0i6CqqpkKzj/i5Vbext0uz/o9+B1fs70PbZmIVYc9gDaTY3vjgw2IIPVQT60nKWVSFJuUrjxuf6/WhkcIzSdhDY2pSS9KP6HBRTdGJaXvHcPaz3BJ023tdS1bTlr8Vd6Gw9KIl8q8ckmcY5fQGBO+QueQA5N06tRn/Arr0PO7gi+s3i+z016zy9vA9r911kTMZHRxAy3QkGSGT2RT+rCpSx4/VBEnkjWNHiDxpg8v+R70rfk/Fla4OndTRQ8Bnc+MUCH7lP59zuDMKz10/NIeWiu5T6CUVAgMBAAGjgbIwga8wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwbQYIKwYBBQUHAQwEYTBfoV2gWzBZMFcwVRYJaW1hZ2UvZ2lmMCEwHzAHBgUrDgMCGgQUj+XTGoasjY5rw8+AatRIGCx7GS4wJRYjaHR0cDovL2xvZ28udmVyaXNpZ24uY29tL3ZzbG9nby5naWYwHQYDVR0OBBYEFH/TZafC3ey78DAJ80M5+gKvMzEzMA0GCSqGSIb3DQEBBQUAA4IBAQCTJEowX2LP2BqYLz3q3JktvXf2pXkiOOzEp6B4Eq1iDkVwZMXnl2YtmAl+X6/WzChl8gGqCBpH3vn5fJJaCGkgDdk+bW48DW7Y5gaRQBi5+MHt39tBquCWIMnNZBU4gcmU7qKEKQsTb47bDN0lAtukixlE0kF6BWlKWE9gyn6CagsCqiUXObXbf+eEZSqVir2G3l6BFoMtEMze/aiCKm0oHw0LxOXnGiYZ4fQRbxC1lfznQgUy286dUV4otp6F01vvpX1FQHKOtw5rDgb7MzVIcbidJ4vEZV8NhnacRHr2lVz2XTIIM6RUthg/aFzyQkqFOFSDX9HoLPKsEdao7WNq</ds:X509Certificate><ds:X509Certificate>MIIFWTCCBEGgAwIBAgIQPXjX+XZJYLJhffTwHsqGKjANBgkqhkiG9w0BAQsFADCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwHhcNMTMxMjEwMDAwMDAwWhcNMjMxMjA5MjM1OTU5WjB/MQswCQYDVQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xHzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsxMDAuBgNVBAMTJ1N5bWFudGVjIENsYXNzIDMgU0hBMjU2IENvZGUgU2lnbmluZyBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJeDHgAWryyx0gjE12iTUWAecfbiR7TbWE0jYmq0v1obUfejDRh3aLvYNqsvIVDanvPnXydOC8KXyAlwk6naXA1OpA2RoLTsFM6RclQuzqPbROlSGz9BPMpK5KrA6DmrU8wh0MzPf5vmwsxYaoIV7j02zxzFlwckjvF7vjEtPW7ctZlCn0thlV8ccO4XfduL5WGJeMdoG68ReBqYrsRVR1PZszLWoQ5GQMWXkorRU6eZW4U1V9Pqk2JhIArHMHckEU1ig7a6e2iCMe5lyt/51Y2yNdyMK29qclxghJzyDJRewFZSAEjM0/ilfd4v1xPkOKiE1Ua4E4bCG53qWjjdm9sCAwEAAaOCAYMwggF/MC8GCCsGAQUFBwEBBCMwITAfBggrBgEFBQcwAYYTaHR0cDovL3MyLnN5bWNiLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMGwGA1UdIARlMGMwYQYLYIZIAYb4RQEHFwMwUjAmBggrBgEFBQcCARYaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9jcHMwKAYIKwYBBQUHAgIwHBoaaHR0cDovL3d3dy5zeW1hdXRoLmNvbS9ycGEwMAYDVR0fBCkwJzAloCOgIYYfaHR0cDovL3MxLnN5bWNiLmNvbS9wY2EzLWc1LmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0xLTU2NzAdBgNVHQ4EFgQUljtT8Hkzl699g+8uK8zKt4YecmYwHwYDVR0jBBgwFoAUf9Nlp8Ld7LvwMAnzQzn6Aq8zMTMwDQYJKoZIhvcNAQELBQADggEBABOFGh5pqTf3oL2kr34dYVP+nYxeDKZ1HngXI9397BoDVTn7cZXHZVqnjjDSRFph23Bv2iEFwi5zuknx0ZP+XcnNXgPgiZ4/dB7X9ziLqdbPuzUvM1ioklbRyE07guZ5hBb8KLCxR/Mdoj7uh9mmf6RWpT+thC4p3ny8qKqjPQQB6rqTog5QIikXTIfkOhFf1qQliZsFay+0yQFMJ3sLrBkFIqBgFT/ayftNTI/7cmd3/SeUx7o1DohJ/o39KK9KEr0Ns5cF3kQMFfo2KwPcwVAB8aERXRTl4r0nS1S+K4ReD6bDdAUK75fDiSKxH3fzvc1D1PFMqT+1i4SvZPLQFCE=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signature-620875415"><xades:SignedProperties Id="SignedProperties-926444332"><xades:SignedSignatureProperties><xades:SigningTime>2015-07-30T14:59:33.899Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>JWm5hAuOwecAoZbmTfoWt4xGXpk=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=Symantec Class 3 SHA256 Code Signing CA, OU=Symantec Trust Network, O=Symantec Corporation, C=US</ds:X509IssuerName><ds:X509SerialNumber>20774764403894310179047588971142595098</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>TrbVeEmbHM9fWB6tVr49m2dEpeU=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU=(c) 2006 VeriSign\, Inc. - For authorized use only, OU=VeriSign Trust Network, O=VeriSign\, Inc., C=US</ds:X509IssuerName><ds:X509SerialNumber>33037644167568058970164719475676101450</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>AHeQ9lYdrYmwvNhVhXYkleNY+KU=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=VeriSign Class 3 Public Primary Certification Authority - G5, OU=(c) 2006 VeriSign\, Inc. - For authorized use only, OU=VeriSign Trust Network, O=VeriSign\, Inc., C=US</ds:X509IssuerName><ds:X509SerialNumber>81710363848389238104995526639509734954</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyImplied></xades:SignaturePolicyImplied></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties></xades:SignedProperties><xades:UnsignedProperties><xades:UnsignedSignatureProperties><xades:SignatureTimeStamp><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><xades:EncapsulatedTimeStamp Encoding="http://uri.etsi.org/01903/v1.2.2#DER">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</xades:EncapsulatedTimeStamp></xades:SignatureTimeStamp></xades:UnsignedSignatureProperties></xades:UnsignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature>
+</manifest>
