@@ -1,4 +1,4 @@
-Skype-History
+Snapshot VSS
 =============
 Description: The "SnapshotVSS" app makes it possible for any regular user to create a Shadow Copy on demand.
 
