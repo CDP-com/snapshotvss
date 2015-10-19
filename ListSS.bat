@@ -1,5 +1,5 @@
 @ECHO OFF 
-REM SET PowerShellScriptPath=d:\temp 
-SET PowerShellScriptPath=%allusersprofile%\cdp\SnapshotsVSS 
+SET PowerShellScriptPath=%1
 powershell -executionPolicy bypass -file "%PowerShellScriptPath%\ListSS.ps1" 
 pause
+

@@ -1,0 +1,278 @@
+----------------------------------vssadmin list shadowstorage----------------------------------------- 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2005 Microsoft Corp.
+
+Shadow Copy Storage association
+   For volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+   Shadow Copy Storage volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+   Used Shadow Copy Storage space: 13.532 GB (5%)
+   Allocated Shadow Copy Storage space: 14.03 GB (5%)
+   Maximum Shadow Copy Storage space: 20 GB (8%)
+
+-------------------------------------vssadmin list shadows-------------------------------------------- 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2005 Microsoft Corp.
+
+Contents of shadow copy set ID: {4131e277-b631-40d5-89dc-d88f9e36fc0e}
+   Contained 1 shadow copies at creation time: 10/8/2015 2:03:47 PM
+      Shadow Copy ID: {5e9817d7-304f-43fb-8183-9163980da3c6}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy6
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {e38438c0-b165-4ba1-9762-e5434e08dc91}
+   Contained 1 shadow copies at creation time: 10/9/2015 12:04:48 PM
+      Shadow Copy ID: {e3ba4144-e1e6-480c-9d01-57eab89aa981}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy7
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {acada087-178d-4da0-a033-c8411e3210ab}
+   Contained 1 shadow copies at creation time: 10/9/2015 12:44:45 PM
+      Shadow Copy ID: {0414d1cd-78ae-4ced-8f7b-514659b70124}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy8
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {67f054e0-9d6c-4c31-933c-c73b484df617}
+   Contained 1 shadow copies at creation time: 10/13/2015 12:30:34 PM
+      Shadow Copy ID: {17591987-eb27-45bd-ba0a-b5760cdce388}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy9
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {8443009d-8d99-473d-9bde-f5353061a80e}
+   Contained 1 shadow copies at creation time: 10/13/2015 12:50:09 PM
+      Shadow Copy ID: {c87f360f-edee-4cad-9743-b3a877f55180}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy10
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {c981e8bd-0234-4927-83a9-847a30b9d74e}
+   Contained 1 shadow copies at creation time: 10/14/2015 12:03:20 PM
+      Shadow Copy ID: {b82a2e62-c1b6-41f4-8f72-05e478c7084b}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy11
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {5b6ba43b-5991-4743-aefe-d2dd56fffc0a}
+   Contained 1 shadow copies at creation time: 10/14/2015 1:39:46 PM
+      Shadow Copy ID: {03b584c1-bf35-4ce5-b972-ef780627011e}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {541efd5e-7e7b-4501-99e4-8c776cf4aa2a}
+   Contained 1 shadow copies at creation time: 10/14/2015 5:10:46 PM
+      Shadow Copy ID: {ed92b5e9-3848-4e8d-92b8-fe15ceb3807e}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy13
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {56e8dde3-309e-4778-9907-5ceac5ecfa38}
+   Contained 1 shadow copies at creation time: 10/15/2015 3:48:17 PM
+      Shadow Copy ID: {6fa82d30-35b7-4b84-80e2-6269da958126}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy14
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {23307527-aaa1-4e0e-9512-3b0fc8396d7c}
+   Contained 1 shadow copies at creation time: 10/15/2015 6:01:52 PM
+      Shadow Copy ID: {8117ade1-d4d4-4084-a653-6283469206b8}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy15
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {391586dd-69ea-4f32-91de-90c33cef05ce}
+   Contained 1 shadow copies at creation time: 10/15/2015 6:40:28 PM
+      Shadow Copy ID: {27b530c2-95fe-42b8-961d-ee81de530602}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy16
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+Contents of shadow copy set ID: {eb3dea65-5aab-47a5-b44b-ae730c329391}
+   Contained 1 shadow copies at creation time: 10/16/2015 10:20:35 AM
+      Shadow Copy ID: {2e01affc-7032-4b09-9ff4-c9c2d2a96c70}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy17
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {8d919634-fc8e-4ebd-8779-176b9caded34}
+   Contained 1 shadow copies at creation time: 10/16/2015 10:26:22 AM
+      Shadow Copy ID: {d301981e-3d88-4be2-9d88-2b4600b8267f}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy18
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {2dbc237c-bc91-4087-b79b-c512252c4673}
+   Contained 1 shadow copies at creation time: 10/16/2015 12:00:10 PM
+      Shadow Copy ID: {54fe8832-fe97-48a3-a893-e52d895ea106}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy19
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessible
+         Attributes: Persistent, Client-accessible, No auto release, No writers, Differential
+
+Contents of shadow copy set ID: {50746033-6227-441c-ad22-61a5342b114e}
+   Contained 1 shadow copies at creation time: 10/19/2015 10:15:55 AM
+      Shadow Copy ID: {203c068e-1589-446d-b3a5-97299c9168de}
+         Original Volume: (C:)\\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+         Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy20
+         Originating Machine: navoutlineserv.cdp.com
+         Service Machine: navoutlineserv.cdp.com
+         Provider: 'Microsoft Software Shadow Copy provider 1.0'
+         Type: ClientAccessibleWriters
+         Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+
+------------------------------------vssadmin list providers------------------------------------------- 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2005 Microsoft Corp.
+
+Provider name: 'Microsoft Software Shadow Copy provider 1.0'
+   Provider type: System
+   Provider Id: {b5946137-7b9f-4925-af80-51abd60b20d5}
+   Version: 1.0.0.7
+
+-------------------------------------vssadmin list volumes-------------------------------------------- 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2005 Microsoft Corp.
+
+Volume path: \\?\Volume{f75569f2-14ab-11e3-b3e9-806e6f6e6963}\
+    Volume name: \\?\Volume{f75569f2-14ab-11e3-b3e9-806e6f6e6963}\
+Volume path: C:\
+    Volume name: \\?\Volume{f75569f3-14ab-11e3-b3e9-806e6f6e6963}\
+Volume path: D:\
+    Volume name: \\?\Volume{f75569f4-14ab-11e3-b3e9-806e6f6e6963}\
+-------------------------------------vssadmin list writers-------------------------------------------- 
+vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+(C) Copyright 2001-2005 Microsoft Corp.
+
+Waiting for responses. 
+These may be delayed if a shadow copy is being prepared.
+
+Writer name: 'Task Scheduler Writer'
+   Writer Id: {d61d61c8-d73a-4eee-8cdd-f6f9786b7124}
+   Writer Instance Id: {1bddd48e-5052-49db-9b07-b96f96727e6b}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'VSS Metadata Store Writer'
+   Writer Id: {75dfb225-e2e4-4d39-9ac9-ffaff65ddf06}
+   Writer Instance Id: {088e7a7d-09a8-4cc6-a609-ad90e75ddc93}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'Performance Counters Writer'
+   Writer Id: {0bada1de-01a9-4625-8278-69e735f39dd2}
+   Writer Instance Id: {f0086dda-9efc-47c5-8eb6-a944c3d09381}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'System Writer'
+   Writer Id: {e8132975-6f93-4464-a53e-1050253ae220}
+   Writer Instance Id: {ffe01b18-49f4-4554-82a7-069a6dc738bd}
+   State: [5] Waiting for completion
+   Last error: No error
+
+Writer name: 'SqlServerWriter'
+   Writer Id: {a65faa63-5ea8-4ebc-9dbd-a0c4db26912a}
+   Writer Instance Id: {05e6b820-084c-4f1d-a676-8d4ea5646cbd}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'ASR Writer'
+   Writer Id: {be000cbe-11fe-4426-9c58-531aa6355fc4}
+   Writer Instance Id: {a1e5c3bd-4d6d-43a4-ab2c-4f1bffd3f93b}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'IIS Config Writer'
+   Writer Id: {2a40fd15-dfca-4aa8-a654-1f8c654603f6}
+   Writer Instance Id: {2d1fe63f-ef98-4a41-9594-f5458efe01cd}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'MSSearch Service Writer'
+   Writer Id: {cd3f2362-8bef-46c7-9181-d62844cdc0b2}
+   Writer Instance Id: {801b9405-4796-47e3-aff9-c44b720053a2}
+   State: [5] Waiting for completion
+   Last error: No error
+
+Writer name: 'Registry Writer'
+   Writer Id: {afbab4a2-367d-4d15-a586-71dbb18f8485}
+   Writer Instance Id: {3f8a4faa-bbaf-472a-85be-af9c2c29d00d}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'Shadow Copy Optimization Writer'
+   Writer Id: {4dc3bdd4-ab48-4d07-adb0-3bee2926fd7f}
+   Writer Instance Id: {9b0a7dee-7791-4c49-bfd5-9477dc05eeab}
+   State: [1] Stable
+   Last error: No error
+
+Writer name: 'WMI Writer'
+   Writer Id: {a6ad56c2-b509-4e6c-bb19-49d8f43532f0}
+   Writer Instance Id: {988a1c84-5f92-43b3-85fc-28c5c07cb97a}
+   State: [5] Waiting for completion
+   Last error: No error
+
+Writer name: 'COM+ REGDB Writer'
+   Writer Id: {542da469-d3e1-473c-9f4f-7847f01fc64f}
+   Writer Instance Id: {00a08291-74f4-44dd-b539-998308585ae1}
+   State: [1] Stable
+   Last error: No error
+

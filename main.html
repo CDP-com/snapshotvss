@@ -13,10 +13,6 @@
 <!--                 END: Necessary Meta              -->
 <!-- ************************************************ -->
 
-
-
-
-
 <!-- ************************************************ -->
 <!-- START: Common Scripts - DO NOT EDIT THIS SECTION -->
 <!-- ************************************************ -->
@@ -46,12 +42,72 @@
 <!--       Add Any of Your Javascript Files Here      -->
 <!-- ************************************************ -->  
 <script type="text/javascript" src="snapshotsvss.js"></script>
-<script type="text/javascript" src="snapshotsvsslib.js"></script>
 <!-- ************************************************ -->  
 <!--               END: App Script Files              -->
 <!-- ************************************************ -->
 
 
+
+
+
+<!-- ************************************************ -->
+<!--START:Your Scripts -EDIT THIS SECTION-->
+<!-- ************************************************ -->
+   
+   <script language="jscript">
+   var appPathName="";
+   var oShell = new ActiveXObject("Shell.Application");   
+    function createSS(){
+	     //alert ("App Path Name:  "+appPathName);
+         var commandtoRun =appPathName+"/createssj.bat";
+         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");   
+	 }
+	 function listSS(){
+         var commandtoRun =appPathName+"/ListSS.bat";
+         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     	
+	 }
+
+    function showSS(){
+         var commandtoRun =appPathName+"/ShowSS.bat";
+         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
+		 }
+
+   function enableAdmin(){
+         var commandtoRun =appPathName+"/Enable_Admin_Acc.bat";
+         oShell.ShellExecute(commandtoRun,"",appPathName, "runas", "1");     
+		 }
+
+   function fixTS(){
+         var commandtoRun =appPathName+"/ModifyTask.bat";
+         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
+   }
+
+      function scheduleSS(){
+         var commandtoRun =appPathName+"/ScheduleSS.bat";
+         oShell.ShellExecute(commandtoRun,"",appPathName, "runas", "1");     
+   }
+   	function setmaxSS(){
+         var commandtoRun =appPathName+"/SetMaxShadowCopies.bat";
+          oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");    
+ 	}	
+	function setmaxCache(){
+         var commandtoRun =appPathName+"/SetMaxCacheSize.bat";
+		 var parmstoPass = " C: 20 "+appPathName;
+         oShell.ShellExecute(commandtoRun,parmstoPass,appPathName, "runas", "1");   
+	}
+	
+	function mountVss(){
+         var commandtoRun =appPathName+"/MountVSS.bat";
+		 var parmstoPass = "ALL "+appPathName;
+         oShell.ShellExecute(commandtoRun,parmstoPass,appPathName, "runas", "1");   
+	}
+			
+	function CreateReport(){ 
+         var commandtoRun =appPathName+"/cr.bat";
+         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
+	}
+
+</script>  
 
 
 
@@ -115,6 +171,11 @@
             if (document.getElementById('treemenu01').visible)
                document.getElementById('treemenu01').focus();
          }
+		 // add code for cwd - common working directory
+		 var loc = document.location.pathname;
+         appPathName = loc.substring(1, loc.lastIndexOf('/'));
+		 //alert("The App Path Naem is: "+appPathName);
+		
       }
 </script>
 <script type="text/javascript" src="../common/scripts/onlinecheck.js"></script>
@@ -122,34 +183,31 @@
 <!--               END: Required Scripts              -->
 <!-- ************************************************ -->
 </head>
+
+
 <body>
-
-
-
-
-
 <!-- ************************************************ -->
 <!--        START: Header - Edit ONLY App Title       -->
 <!-- ************************************************ -->
 <script type="text/javascript" src="../common/template/header1.js"></script>
-
 	<!-- App Title - Edit This Section -->
-		Snapshot VSS
+		Show Snapshot VSS
 			<!-- Include a Link to your App's Connect Page -->
 			<div>
-                <a id="devpage" href="http://factory.snapback-apps.com/app/previous-versions/" title="The Factory page where the developers of this App Connect" style="text-decoration:none">Connect with Developers Here!</a>
-				&nbsp;|&nbsp;
-				<a id="webapp" href="http://snapback-apps.com/snapshotsvss/main.html" title="View this App on the Web and in your Browser">View App on the Web</a>
-   			</div>
+                <a id="devpage" href="http://factory.snapback-apps.com/app/previous-versions" title="The Factory page where the developers of this App Connect" style="text-decoration:none">Connect with Developers Here!</a>
 			<!-- End Connect Link -->
+			
+				<!-- Do Not Edit - This is Replaced on App Publication -->
+					&nbsp;|&nbsp;
+					<a id="webapp" href="" title="View this App on the Web and in your Browser">View App on the Web</a>
+				<!-- End App's Web Link -->
+   			</div>
 	<!-- End App Title -->
 
 <script type="text/javascript" src="../common/template/header2.js"></script>
 <!-- ************************************************ -->
 <!--                    END: Header                   -->
 <!-- ************************************************ -->
-
-
 
 
 
@@ -168,10 +226,6 @@
 <!--                   END: Sidebar                   -->
 <!-- ************************************************ -->
 
-
-
-
-
 <!-- ************************************************ -->
 <!--      START: Page Content - Edit this Section     -->
 <!-- ************************************************ -->
@@ -183,22 +237,11 @@
     <li><a href="#tab5" title="Here's how you can help make this App better">Improve this App</a></li>
 	<li><a href="#tab6" title="Here's how you can help the SnapBack Apps Project">SnapBack Apps Project</a></li>
 </ul>
-      				
-<div id="tab1">
+	<div id="tab1">
+			<p>This app will create a Microsoft Windows Shadow Copy of a volume.  Users typically have no easy or readily available way 
+			to create a Shadow Copy in Windows 7.  In Windows 8, users have no method at all to create a Shadow Copy.  
+			This app will make it possible for any regular user to create a Shadow Copy on demand.</p>	
 
-	<div id="main-side">
-		<strong>NEED HELP?</strong><br />
-		<a id="helpers" href="http://factory.snapback-apps.com/app/previous-versions/" title="The Snapshot VSS App">The Snapshot VSS App</a><br>
-		<p>Thanks for using our App.  Join us and help by visiting our home page!</p>
-				
-		<hr />
-								
-		<p><a id="standarduser" href="#" title="This will be a Standard Link for Users to Help Develop the SnapBack Apps Project">Help us help you! Improve the SnapBack Apps Project</a></p>
-
-	</div>
-			
-    <p>This app will create a Microsoft Windows Shadow Copy of a volume.  Users typically have no easy or readily available way to create a Shadow Copy in Windows 7.  In Windows 8, users have no method at all to create a Shadow Copy.  This app will make it possible for any regular user to create a Shadow Copy on demand.</p>
-						
 	<table class="main-table">
 		<tr>
 			<td colspan="2"><hr /></td>
@@ -206,234 +249,190 @@
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton1">
-					<button package="snapshotsvss" id="runApp" onclick="javascript:runApp('createss')" title="Clicking this button will create a Shadow Copy!"><span style="display:inline-block; width:100px;">Create a Shadow Copy</span></button>
+					<input language="vbscript" button class="btn" onclick="createSS()" type="button" value="Create a Shadow Copy" name="btn_createss"><br /><br />
 				</div>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
 			Click on the "Create a Shadow Copy" to create a snapshot immediately, on-demand.
 			</td>
-		</tr>
+		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
-			<div id="cdpbutton2">
-			  <button package="snapshotsvss" id="runApp" onclick="javascript:runApp('listss')" title="List Shadow Copies"><span style="display:inline-block; width:100px;">List Shadow Copies</span></button>
-			</div>
-			</td>
+				<div id="cdpbutton2">
+					<input language="vbscript" button class="btn" onclick="listSS()" type="button" value="List Shadow Copies" name="btn_listss"><br /><br />				</div>
+				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
 			Click on the "List Shadow Copies" to bring up a list of all snapshots available on your system.
 			</td>
-		</tr>
+		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
-			<div id="cdpbutton3">
-			  <button package="snapshotsvss" id="runApp" onclick="javascript:runApp('scheduless')" title="Schedule Shadow Copies"><span style="display:inline-block; width:100px;">Schedule Shadow Copies</span></button>
-			</div>
-			</td>
+				<div id="cdpbutton3">
+					<input language="vbscript" button class="btn" onclick="scheduleSS()" type="button" value="Schedule Shadow Copies" name="btn_scheduless"><br /><br />				</div>
+				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on "Schedule Shadow Copies" to schedule a snapshot to be created daily at 12:00pm. Your machine must be running at the scheduled time for the schedule to work and take a snapshot. Otherwise, a snapshot will not be taken.
+			Click on "Schedule Shadow Copies" to schedule a snapshot to be created daily at 12:00pm.  Of course, for the schedule to work and take a snapshot, your machine must be running at the scheduled time.  Otherwise, a snapshot will not be taken.
 			</td>
-		</tr>
+		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
-			<div id="cdpbutton4">
-			  <button package="snapshotsvss" id="runApp" onclick="javascript:runApp('showss')" title="Show Shadow Storage"><span style="display:inline-block; width:100px;">Show Shadow Storage</span></button>
-			</div>
-			</td>
+				<div id="cdpbutton4">
+					<input language="vbscript" button class="btn" onclick="showSS()" type="button" value="Show Shadow Storage" name="btn_showss"><br></br>				</div>
+				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
 			Click on the "Show Shadow Storage" to show the configuration of storage for your shadow copies.
 			</td>
-		</tr>
+		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
-			<div id="cdpbutton5">
-			  <button package="snapshotsvss" id="runApp" onclick="javascript:runApp('enableadmin')" title="Enable Admin Account"><span style="display:inline-block; width:100px;">Enable Admin Account</span></button>
-			</div>
+				<div id="cdpbutton4">
+					<input language="vbscript" button class="btn" onclick="setmaxSS()" type="button" value="Set Max Shadow Copies" name="btn_showss"><br></br>				</div>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			Click on the "Set Max Shadow Copies" to set your max shadow copies.
 			</td>
-			<td style="border: none; padding: 1px 0px 30px 0px; width:85%; vertical-align: top;">
-			Click on the "Enable Administrator Account" on windows 7 and windows 8 machine.
-			</td>
-		</tr>
+		</tr>			
 		<tr>
-			<td style="border: none;" colspan="2"><hr /></td>
-		</tr>
-	</table>
-            
-	<div style="clear: both"></div>
-  				
-</div><!--End Tab1-->
-      				
-<div id="tab2">
+			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
+				<div id="cdpbutton5">
+					<input language="vbscript" button class="btn" onclick="setmaxCache()" type="button" value="Set Max Cache" name="btn_showss"><br></br>				</div>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			Click on the "Set Max Cache" to set your max cache for VSS.
+			</td>
+		</tr>			
+		<tr>
+			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
+				<div id="cdpbutton6">
+					<input language="vbscript" button class="btn" onclick="mountVss()" type="button" value="Mount All VSS" name="btn_showss"><br></br>				</div>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			Click on the "Mount All VSS" to mount all Shadow Copies to c:\vss folder.
+			</td>
+		</tr>			
+		<tr>
+			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
+				<div id="cdpbutton7">
+					<input language="vbscript" button class="btn" onclick="enableAdmin()" type="button" value="Enable Admin" name="btn_eac"><br></br>				</div>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			Click on the "Enable Admin" to enable the Administrator user account, on-demand.
+			</td>
+		</tr>			
+		<tr>
+			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
+				<div id="cdpbutton8">
+					<input language="vbscript" button class="btn" onclick="CreateReport()" type="button" value="Create Report" name="btn_eac">				</div>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			Click on the "Create Report" on windows 7 and windows 8 machine.
+			</td>
+		</tr>			
+	</table>	
+	<div style="clear: both"></div>				
+	</div><!--End Tab1-->
+				
+	<div id="tab2">
+		<p>This area is dedicated to providing technical details about the app.  Provide the mechanics of how the app works.  Generally speaking, if you are making changes to a user's computer, it's best to detail those changes in a completely transparent manner.</p>
+
+		<p>Include more details than what would appear on the "Overview" tab and be free to use more technical language in the process.</p>
+
+	</div><!--End Tab2-->
+				
+	<div id="tab3">
+
+		<p>This area is dedicated to having a set of frequently asked questions that a common user may ask.</p>
+
+		<p>
+			<strong>Q:</strong> How do I see the difference of what is current on my drive and what is in a shadow copy?<br />
+			<strong>A:</strong> Map a drive letter to a shadow copy and you can then compare both drive letters.
+		</p>
+					
+		<p>
+			<strong>Q:</strong> What are Shadow Copies?<br />
+			<strong>A:</strong> Shadow Copies are snapshots of a volumne at a given time.
+		</p>
+					
+		<p>
+			<strong>Q:</strong> What is Microsoft's Previous Versions?<br />
+			<strong>A:</strong> Previous Versions is a tool that allowed the user to restore files or folders from a shadow copy. This tool was made available in Windows Explorer.
+		</p>
+		
+		<p>
+			<strong>Q:</strong> Why do I need shadow copies?<br />
+			<strong>A:</strong> Windows Backup and Restore points use shadow copies.
+		</p>
+		<p>
+			<strong>Q:</strong> where are Shadow Copies Kept?<br />
+			<strong>A:</strong> You can specify what volume you want to keep your shadow copies on if you have not created any shadow copies yet.  The default is the volume where the source files are.  
+		</p>
+		<p>
+			<strong>Q:</strong> How do I configure Shadow Storage?<br />
+			<strong>A:</strong> The default size is 10% of the volume.  It must be at least 300 MB.
+		</p>
+		
+	</div><!--End Tab3-->
+				
+	<div id="tab4">
+		<strong>Terms</strong>
+				
+		<p>You acknowledge and agree that any and all content you submit on this site shall remain the exclusive property of Columbia Data Products, Incorporated (CDP). This includes, but is not limited to, the applications, materials, products or processes You may create which are based on or utilize CDP Software, including the contents of Blogs, Forums, Groups, or any content not specifically listed but to be known as part of CDP.</p>
+
+		<p>You hereby release and covenant not to hold liable CDP or its Affiliates, or any of their licensees, assigns or successors, for any and all damages, liabilities, causes of action, judgments or claims (a) pertaining to any intellectual property You develop that is based on, uses, or relates to CDP Software; and (b) which otherwise may arise in connection with Your use of, reliance on, or reference to CDP Software. As between You and CDP, CDP and its licensors retain the IP Rights in and to CDP Software and any derivative works thereto created by or for CDP or its licensors.</p>
+
+		<p>Further, You agree that You will not remove, obscure, make illegible or alter any notices or indications of any IP Rights and/or CDP’s rights and ownership thereof, whether such notice or indications are affixed on, contained in or otherwise connected to such materials.</p>
+
+		<strong>Expectations of Service</strong>
+
+		<p>CDP’s role is to provide a platform for people who want to take advantage of the global community of customers and product experts. While CDP will monitor content and try to ensure the accuracy of the information, any information provided by CDP staff is offered "AS IS" with no warranties, and no rights are conferred. Each member assumes all the risk of use.</p>
+	</div><!--End Tab4-->
+
+	<div id="tab5">
+		<strong>Thanks for Contributing</strong>
+		
+		<p>This app was created with developers working in collaboration with users like you.  We want your input and valuable contributions towards this app!  We’d like to hear ANYTHING, good or bad, that you have to say.  Feeback can include any improvements you wish to see in this app, suggested layout/content changes, and development enchancements.  We will publish editable excerpts from your input. </p>
+					
+		<strong>Let us help guide you.  How do you want to contribute?</strong>			
+			<table class="contribute-table">
+				<tr>
+					<td><strong><a id="idbug" href="http://107.22.239.74/app/previous-versions/issues-bugs/" title="Report a Bug or Issue Regarding this App">Report a Bug/Issue [insert link]</a></strong><br />Something not working right?  Notice any irregular behavior?  Report a bug or issue with as much detail as you want to include and help us improve the app.</td>
+					
+					<td><strong><a id="idnewfeature" href="http://107.22.239.74/app/previous-versions/request-new-features/" title="Request a New Feature for this App">Request a New Feature [insert link]</a></strong><br />Do you have a feature you would like see added to this app?  Report your idea to our team of developers and help see its inclusion in the next version.</td>
+				</tr>
+				<tr>
+					<td><strong><a id="idadmin" href="http://107.22.239.74/app/previous-versions/administration/" title="Work on or Learn How to Work on Development of this App">Work on App Development [insert link]</a></strong><br />Do you know a way to improve the app's performance?  Learn how to help this app's team of developers enhance their product with better coding, updated syntax, and more!</td>
+					
+					<td><strong><a id="iduicontent" href="http://107.22.239.74/app/previous-versions/administration/" title="Make Changes to the App's UI and Content">Improve the App's UI and Content [insert link]</a></strong><br />Think an image should be positioned in another way?  Think a paragraph needs to change?  Help the team create a UI and content the makes sense to users like you.</td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong><a id="idapp" href="http://107.22.239.74/app/previous-versions/" title="Visit the App Page for this App">I'm not quite sure... [insert link]</a></strong><br />Don't know how to contribute?  No problem!  Visit the app's User/Dev page and learn about ALL of the ways your input and work can help make this a better app.</td>
+				</tr>
+			</table>
+					
+		<strong>About the SnapBack Apps Co-op</strong>	
+		
+		<p>SnapBack Apps is designed to allow regular users to work with developers in the hope of building and bettering the applications we use daily.  The SnapBack Apps Co-op is the platform where contributors communicate, design, and ultimately work together to accomplish this mission.</p>
+	</div><!--End Tab5-->
+	
+	<div id="tab6">
+		<p>To improve the SnapBack Apps project, try the following options:</p>
+		
+		<p><strong>Tell others:</strong><br>
+		Show how a SnapBack App is a solution to an asked question on sites like SuperUser.com.  Many sites offer written solutions that advise, if you hand-type or apply the fix.  Often, the solutions published vary in quality, method, have no error handling, and require more context and understanding than most users have. By simply referring them to that specific App's page, users on that site can simply choose to and safely apply that fix with a single click, (or first install SnapBack).  Read "best practices" and "example answers" to a posted problem, using links to a specific SnapBack App page.</p> 
+
+		<p><strong>Contribute to our Factory:</strong><br>
+		This app was created with developers working in collaboration with users like you. We want your input and valuable contributions towards this app! We’d like to hear ANYTHING, good or bad, that you have to say. (We will NEVER hide ANY feedback.)  Feedback can include any improvements you wish to see in this app, suggested layout/content changes, and development enhancements. We will generally publish edited excerpts from your input.</p>
+      		
+      	<p><strong>The SnapBack Apps Factory is a platform where</strong> regular users interact with, or become App contributors and developers themselves.  Most technology products initially frustrates users unnecessarily.  If new versions were produced daily, users and developers were constantly communicating, products would quickly evolve to work perfectly.  SnapBack Apps' mission is to modify how any existing hardware and software interacts with ordinary users.   Our Factory connects users, contributors and developers in near real time to create or improve SnapBack Apps.  Changes that are apparently required are quickly communicated, applied and deployed to all users within hours.  Eventually, all changes that any user would ever want, are created and deployed.  The SnapBack Apps Factory platform is where contributors and users of all kinds communicate, design, and ultimately work together to accomplish this mission..</p>
+	</div><!--End Tab6-->
+				
+	<div style="clear: both;"></div>
+									
+		</div><!--End Primary-->
       
-	<p class="developers-message">[To the Developer - Use this section to detail any associated costs with your app.]</p>
-	
-	<p><strong>No Cost to You.</strong></p>
-	
-	<p>All SnapBack Apps are free for both business and personal use, provided that the SnapBack Platform is "hand installed", by a user and not "mass installed".    However, for some apps they may be working with or modify another application, such as Microsoft Word, which is obviously not free.  Sometimes we might independently offer that application to you with a link to a separate page.  If and when we offer you the software, we warrant that to our best ability, we've fully disclosed which products in that category are best, the least cost prices with links, along with any dissenting opinions from contributors like you. </p>
-	
-	<p>For all our users, contributors, attributable sources, and other companies, we've prepared an easy to understand page that explains all our <a id="policiesterms" href="#" >Policies, Complete Terms, and Conditions of our SnapBack Apps, Platform, website, and our SnapBack Apps Factory</a> where they are produced.  Together, this page, the FAQ, and the discussions of users, contributors, and CDP should convince you that this project is worthy of your full support.</p>
-	
-	<strong>How We Make Our Money...</strong>
-  
-</div><!--End Tab2-->
-      				
-<div id="tab3">
-			
-	<p class="developers-message">[To the Developer - Use this section to describe in greater technical detail how your app works]</p>
-	
-	<p>This area is dedicated to providing technical details about the app.  Provide the mechanics of how the app works.  Generally speaking, if you are making changes to a user's computer, it's best to detail those changes in a completely transparent manner.</p>
-
-	<p>Include more details than what would appear on the "Home" tab and be free to use more technical language in the process.</p>
-
-	<hr />
-	
-	<h3>Technical Details</h3>
-	<p>Include, in specific wording, what your app does.  Some questions you may want to answer include: What files does your app change?  In what programming language is your app written?  Are there any resources you've used to create your app?  Feel free to include as much detail as you want.</p>
-
-	<hr />
-	
-	<h3>Script Source Code</h3>
-	<strong>cdpbutton1: <em>onclick="javascript:runapp('displaymessage.js')"</em></strong>
-	<p><iframe id="srccode" name="srccode" width="80%" frameborder="0" scrolling="auto" src="displaymessage.txt" seamless sandbox=""></iframe></p>
-			
-</div><!--End Tab3-->
-      				
-<div id="tab4">
-		
-	<p class="developers-message">[To the Developer - DO NOT EDIT - The various Committees will edit this section during your app's approval process.]</p>
-	
-	<p>Each Committee has signed off on their part.  For more detail of each committeeâ€™s policies and procedures, visit their home pages.</p>  
-
-	<table class="certification-table">
-		<tr>
-			<th>Certification Committee</th>
-			<th>Certification Details</th>
-		</tr>
-
-		<tr>
-			<td class="committee-name">CDP Certification</td>
-			<td>
-				<p>Released = [Date] | Version = [Version] | First Released = [Date] | Manifest Name = [Name] | By = [Author/Group]</p>
-				<p>NOTE: CDP will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="committee-name">Performance / System Impact</td>
-			<td>
-				<p>RAM = [Details] | DISK = [Details] | Runtime/CPU = [Details]</p>
-				<p>NOTE: the Performance/System Impact Committee will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="committee-name">Security/Logging/User Rights/Locations</td>
-			<td>
-				<p>
-					Security:[Details]<br /> 
-					Logging: [Details]<br />
-					Users: [Details]<br />
-					Rights required: [Details]<br />
-					Locations: [Details]<br />
-				</p>
-				<p>NOTE: the Security/Logging/User Rights/Locations Committee will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="committee-name">Safety/Conflicts/Compatibility/Expertise</td>
-			<td>
-				<p>Safe = [Details] | Conflicts = [Details] | Compatibility = [Details] | UserType = [Details]</p>
-				<p>NOTE: the Safety/Conflicts/Compatibility/Expertise Committee will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="committee-name">Legal/Attribution/Liability</td>
-			<td>
-				<p>Attributed = [Details] | DMCA Issues = [Details] | Damage = [Details]</p>
-				<p>NOTE: the Legal/Attribution/Liability Committee will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="committee-name">Monetization/Privacy</td>
-			<td>
-				<p>Monetization = [Details] | Privacy Issues = [Details]</p>
-				<p>NOTE: the Monetization/Privacy Committee will include any notes directed at the user here.</p>
-			</td>
-		</tr>
-	</table>
-			
-</div><!--End Tab4-->
-      
-<div id="tab5">
-			
-	<p class="developers-message">[To the Developer - Use this section to tell users how they can help improve this app]</p>
-	
-	<p><strong>There's a number of ways you can help with this App and users like you:</strong></p>
-
-	<ul>
-		<li><a id="uicontent" href="http://factory.snapback-apps.com/app/previous-versions/ui-content/" title="Your App's UI & Content Page"> UI & Content</a> - Request changes in the content or look of our App by editing a moderated version of the UI and Content page.</li>
-		<li><a id="requestfeature" href="http://factory.snapback-apps.com/app/previous-versions/request-new-features/" title="Your App's Feature Request Page"> Request a Feature</a> - Want something extra? Request it by editing a moderated version of our Feature Request page.</li>
-		<li><a id="reportbug" href="http://factory.snapback-apps.com/app/previous-versions/issues-bugs/" title="Your App's Issues and Bugs Page"> Report a Bug or Issue</a> - Find something that does not work right? Report your bug or issue by editing a moderated version of the bug reporting page.</li>
-	</ul>
-
-	<h3>We Appreciate your Help!</h3>
-	<p>This app was created with developers working in collaboration with users like you. We want your input and value your contributions for this app!</p>
-
-			
-</div><!--End Tab5-->
-		
-<div id="tab6">
-
-	<p>When software or hardware frustrates you, let us try to help:<br>
-	&nbsp;&nbsp;&nbsp;- Browse the index on the left to see if there is already a solution, since more will be added daily.<br>
-	&nbsp;&nbsp;&nbsp;- When your solution or frustration is not listed, since once we hear you, we'll quickly create those solutions.<br>
-	</p>
-
-	<h3>Tell others:</h3>
-	<p>Show how a SnapBack App is a solution to an asked question on sites like SuperUser.com.  Many sites offer written solutions that advise, if you hand-type or apply the fix.  Often, the solutions published vary in quality, method, have no error handling, and require more context and understanding than most users have. By simply referring them to that specific App's page, users on that site can simply choose to and safely apply that fix with a single click, (or first install SnapBack).  Read "best practices" and "example answers" to a posted problem, using links to a specific SnapBack App page.</p> 
-
-	<h3>Buy from us, or from our affiliate links:</h3>	
-	<p>(Note:  All sales will be done by Columbia Data Products, publisher of SnapBack Apps)</p>
-	
-	<p>We don't pepper you with ads you don't want to see, or suggest any products that our contributors don't think you need to see right then. You'll be happy if you consider our contributor's recommendations when you see them, since we guarantee the best independent advice and price, along with any of the best alternatives known.</p>
-	
-	<ul>
-		<li>Amazon Affiliate links - Anything you buy when you use this link helps us provide more solutions  [@SMadara: put affiliate link here, with graphic]</li>
-		<li>Microsoft Products -  Contact us, and we'll either provide the best prices on your needs, or advise you who has the best prices.  [Contact us HERE]</li>
-		<li>Google Apps and other Google products and services - CDP is already a dealer for Google, and we will provide you the best prices  [Contact us HERE]</li>
-	</ul>
-
-	<h3>Contribute CASH to SnapBack Apps</h3>
-	<ul>
-		<li>Amazon Payments [ need to verify link for donations ]</li>
-		<li>BitCoins (Get logo, and I will get you an address)</li>
-		<li>Cash  [provide a link or email address]</li>
-		<li>PayPal</li>
-	</ul>
-
-	<h3>Later, we will provide links to:</h3>
-	<ul>
-		<li>Like Us on Facebook: http://www.facebook.com/SnapBack_Apps (future)</li>
-		<li>Follow Us on Twitter: http://twitter.com/SnapBack_Apps (future)</li>
-		<li>Follow Us on Instagram: @SnapBack_Apps (future)</li>
-	</ul>
-	
-	<p><strong>Ensure that any pages in Wikipedia are fair and balanced</strong> that reference SnapBack Apps (later) and Columbia Data Products.</p>
-
-	<h3>Answer Questions on our CONNECT pages for this SnapBack App, or others:</h3>
-	<p><a id="connectpage" href="#" title="Your App's Connect Page">Click Here</a></p>
-
-	<h3>Become a Contributor, Writer, Manager, Helper, Graphic Design or Developer</h3>
-	<p>http://Attracting-New-Developers-to-the-Community</p> 
-
-	<h3>Thanks for Contributing!</h3>
-	<p>This app was created with developers working in collaboration with users like you. We want your input and valuable contributions towards this app! Weâ€™d like to hear ANYTHING, good or bad, that you have to say. (We will NEVER hide ANY feedback.*)  Feedback can include any improvements you wish to see in this app, suggested layout/content changes, and development enhancements. We will generally publish edited excerpts from your input.</p>
-	
-	<p><strong>The SnapBack Apps Factory is a platform where</strong> regular users interact with, or become App contributors and developers themselves.  Most technology products initially frustrates users unnecessarily.  If new versions were produced daily, users and developers were constantly communicating, products would quickly evolve to work perfectly.  SnapBack Apps' mission is to modify how any existing hardware and software interacts with ordinary users.   Our Factory connects users, contributors and developers in near real time to create or improve SnapBack Apps.  Changes that are apparently required are quickly communicated, applied and deployed to all users within hours.  Eventually, all changes that any user would ever want, are created and deployed.  The SnapBack Apps Factory platform is where contributors and users of all kinds communicate, design, and ultimately work together to accomplish this mission.</p>
-		
-</div><!--End Tab6-->
+    </div><!--End Content Wrapper-->
+    
+</div><!--End Page-->
 <!-- ************************************************ -->
 <!--                 END: Page Content                -->
 <!-- ************************************************ -->
@@ -459,32 +458,35 @@
 <!--              DO NOT EDIT THIS SECTION            -->
 <!-- ************************************************ -->
 <script type="text/javascript">
-   /* DEVELOPER NOTE: Set number of CDP buttons for page */
-   var nCDPButtons = 5;  //Number of buttons for page.
-   /* Global array of button objects inheriting from CDPButton class */
+   // DEVELOPER NOTE: Set number of CDP buttons for page
+   var nCDPButtons = 9;  //Number of buttons for page.
+   // Global array of button objects inheriting from CDPButton class
    var oButtonsArray = [];
    oButtonsArray.length = nCDPButtons;  //Number of buttons for page. Array elements start with zero, so 3 buttons have elements 0 - 2.
 </script>
 <script type="text/javascript" src="../common/scripts/cdp-uri.js"></script>
 <script type="text/javascript">
    <!--
-   // Globals used by ../common/scripts/weblpagelogic.js
-   // DEVELOPER NOTE: Developer needs to set next three values
-   var PackageName = "snapshotsvss";
-   var DemoPageName = "demo.html";
+   // Globals used by ../common/webpagelogic.js
+   // DEVELOPER NOTE: Developer needs to set the next value
+   var PackageName = "snapshotsVSS";
+
+	// DEVELOPER NOTE: Next value can be set, but is optional
+   var DemoPageName = "";	// Leave this blank or use an independent html file.
+   
    var LivePageName = "main.html";
    
    var ButtonCount = oButtonsArray.length;
    var oWPLogic;
-   /* Next initialization is the function name in snapshotsvsslib.js that runs when the "?run=1" parameter is included in the url */
-   var RunableFunction = "runApp()";
+   /* Next initialization is the function name in [packagename]lib.js that runs when the "?run=1" parameter is included in the url */
+   var RunableFunction = "runapp()";
    loadScript("../common/scripts/webpagelogic.js", function()
    {
       // Initialization code for instantiation of web page object
-      oWPLogic = new Webpage(PackageName, DemoPageName, LivePageName, ButtonCount);    //Function in ../common/scripts/webpagelogic.js
+      oWPLogic = new Webpage(PackageName, DemoPageName, LivePageName, ButtonCount);    //Function in ../common/webpagelogic.js
       
       snAppPage(oWPLogic);
-      //oWPLogic.isLocal = false;   //Uncomment this line to force online behavior
+//      oWPLogic.isLocal = false;   //Uncomment this line to force online behavior
 
       if (oWPLogic.isLocal)
       {
@@ -504,9 +506,6 @@
 <!-- ********************************************** -->
  
 
-
-
- 
 </body>
 </html> 
 
