@@ -53,59 +53,68 @@
 <!-- ************************************************ -->
 <!--START:Your Scripts -EDIT THIS SECTION-->
 <!-- ************************************************ -->
-   
-   <script language="jscript">
-   var appPathName="";
-   var oShell = new ActiveXObject("Shell.Application");   
-    function createSS(){
-	     //alert ("App Path Name:  "+appPathName);
-         var commandtoRun =appPathName+"/createssj.bat";
-         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");   
-	 }
-	 function listSS(){
-         var commandtoRun =appPathName+"/ListSS.bat";
-         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     	
-	 }
+<script language="jscript">
+  var appPathName = "";
+  var oShell = new ActiveXObject("Shell.Application");
+  function createSS()
+  {
+    // alert ("App Path Name:  " + appPathName);
+    var commandtoRun = appPathName + "/createssj.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
+  function listSS()
+  {
+    var commandtoRun = appPathName + "/ListSS.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
 
-    function showSS(){
-         var commandtoRun =appPathName+"/ShowSS.bat";
-         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
-		 }
+  function showSS()
+  {
+    var commandtoRun = appPathName + "/ShowSS.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
 
-   function enableAdmin(){
-         var commandtoRun =appPathName+"/Enable_Admin_Acc.bat";
-         oShell.ShellExecute(commandtoRun,"",appPathName, "runas", "1");     
-		 }
+  function enableAdmin()
+  {
+    var commandtoRun = appPathName + "/Enable_Admin_Acc.bat";
+    oShell.ShellExecute(commandtoRun, "", appPathName, "runas", "1");
+  }
 
-   function fixTS(){
-         var commandtoRun =appPathName+"/ModifyTask.bat";
-         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
-   }
+  function fixTS()
+  {
+    var commandtoRun = appPathName + "/ModifyTask.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
 
-      function scheduleSS(){
-         var commandtoRun =appPathName+"/ScheduleSS.bat";
-         oShell.ShellExecute(commandtoRun,"",appPathName, "runas", "1");     
-   }
-   	function setmaxSS(){
-         var commandtoRun =appPathName+"/SetMaxShadowCopies.bat";
-          oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");    
- 	}	
-	function setmaxCache(){
-         var commandtoRun =appPathName+"/SetMaxCacheSize.bat";
-		 var parmstoPass = " C: 20 "+appPathName;
-         oShell.ShellExecute(commandtoRun,parmstoPass,appPathName, "runas", "1");   
-	}
-	
-	function mountVss(){
-         var commandtoRun =appPathName+"/MountVSS.bat";
-		 var parmstoPass = "ALL "+appPathName;
-         oShell.ShellExecute(commandtoRun,parmstoPass,appPathName, "runas", "1");   
-	}
-			
-	function CreateReport(){ 
-         var commandtoRun =appPathName+"/cr.bat";
-         oShell.ShellExecute(commandtoRun,appPathName,appPathName, "runas", "1");     
-	}
+  function scheduleSS()
+  {
+    var commandtoRun = appPathName + "/ScheduleSS.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
+  function setmaxSS()
+  {
+    var commandtoRun = appPathName + "/SetMaxShadowCopies.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
+  function setmaxCache()
+  {
+    var commandtoRun = appPathName + "/SetMaxCacheSize.bat";
+    var parmstoPass = " C: 20 " + appPathName;
+    oShell.ShellExecute(commandtoRun, parmstoPass, appPathName, "runas", "1");
+  }
+
+  function mountVss()
+  {
+    var commandtoRun = appPathName + "/MountVSS.bat";
+    var parmstoPass = "ALL " + appPathName;
+    oShell.ShellExecute(commandtoRun, parmstoPass, appPathName, "runas", "1");
+  }
+
+  function CreateReport()
+  {
+    var commandtoRun = appPathName + "/cr.bat";
+    oShell.ShellExecute(commandtoRun, appPathName, appPathName, "runas", "1");
+  }
 
 </script>  
 
@@ -174,7 +183,7 @@
 		 // add code for cwd - common working directory
 		 var loc = document.location.pathname;
          appPathName = loc.substring(1, loc.lastIndexOf('/'));
-		 //alert("The App Path Naem is: "+appPathName);
+         //alert("TEMPORARY APP MESSAGE\n\nThe path this App is running from is "+appPathName+".\n\n\n(This temporary test message will be removed in approximately one week.)");
 		
       }
 </script>
@@ -249,83 +258,83 @@
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton1">
-					<input language="vbscript" button class="btn" onclick="createSS()" type="button" value="Create a Shadow Copy" name="btn_createss"><br /><br />
+					<button onclick="jscript:createSS()" title="This button will create a Shadow Copy" name="btn_createss">Create a Shadow Copy</button>
 				</div>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Create a Shadow Copy" to create a snapshot immediately, on-demand.
+			   Click on the "Create a Shadow Copy" to create a snapshot immediately, on-demand.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton2">
-					<input language="vbscript" button class="btn" onclick="listSS()" type="button" value="List Shadow Copies" name="btn_listss"><br /><br />				</div>
+					<button onclick="jscript:listSS()" title="This button will generate a list of Shadow Copies" name="btn_listss">List Shadow Copies</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "List Shadow Copies" to bring up a list of all snapshots available on your system.
+	     		Click on the "List Shadow Copies" to bring up a list of all snapshots available on your system.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton3">
-					<input language="vbscript" button class="btn" onclick="scheduleSS()" type="button" value="Schedule Shadow Copies" name="btn_scheduless"><br /><br />				</div>
+					<button onclick="jscript:scheduleSS()" title="This button will set up a schedule of Shadow Copies" name="btn_scheduless">Schedule Shadow Copies</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on "Schedule Shadow Copies" to schedule a snapshot to be created daily at 12:00pm.  Of course, for the schedule to work and take a snapshot, your machine must be running at the scheduled time.  Otherwise, a snapshot will not be taken.
+   			Click on "Schedule Shadow Copies" to schedule a snapshot to be created daily at 12:00pm.  Of course, for the schedule to work and take a snapshot, your machine must be running at the scheduled time.  Otherwise, a snapshot will not be taken.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton4">
-					<input language="vbscript" button class="btn" onclick="showSS()" type="button" value="Show Shadow Storage" name="btn_showss"><br></br>				</div>
+					<button onclick="jscript:showSS()" title="This button will show Shadow Storage" name="btn_showss">Show Shadow Storage</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Show Shadow Storage" to show the configuration of storage for your shadow copies.
-			</td>
-		</tr>			
-		<tr>
-			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
-				<div id="cdpbutton4">
-					<input language="vbscript" button class="btn" onclick="setmaxSS()" type="button" value="Set Max Shadow Copies" name="btn_showss"><br></br>				</div>
-				</td>
-			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Set Max Shadow Copies" to set your max shadow copies.
+   			Click on the "Show Shadow Storage" to show the configuration of storage for your shadow copies.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton5">
-					<input language="vbscript" button class="btn" onclick="setmaxCache()" type="button" value="Set Max Cache" name="btn_showss"><br></br>				</div>
+					<button onclick="jscript:setmaxSS()" title="This button will set the maximum number of Shadow Copies" name="btn_setmaxss">Set Max Shadow Copies</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Set Max Cache" to set your max cache for VSS.
+			   Click on the "Set Max Shadow Copies" to set your max shadow copies.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton6">
-					<input language="vbscript" button class="btn" onclick="mountVss()" type="button" value="Mount All VSS" name="btn_showss"><br></br>				</div>
+					<button onclick="jscript:setmaxCache()" title="This button will set maximum cache for Shadow Copies" name="btn_setmaxcache">Set Maximum Cache</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Mount All VSS" to mount all Shadow Copies to c:\vss folder.
+   			Click on the "Set Maximum Cache" to set your maximum cache for VSS.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton7">
-					<input language="vbscript" button class="btn" onclick="enableAdmin()" type="button" value="Enable Admin" name="btn_eac"><br></br>				</div>
+					<button onclick="jscript:mountVss()" title="This button will Mount All VSS" name="btn_mountvss">Mount All Shadow Copies</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Enable Admin" to enable the Administrator user account, on-demand.
+			   Click on the "Mount All Shadow Copies" to mount all Shadow Copies to c:\vss folder.
 			</td>
 		</tr>			
 		<tr>
 			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
 				<div id="cdpbutton8">
-					<input language="vbscript" button class="btn" onclick="CreateReport()" type="button" value="Create Report" name="btn_eac">				</div>
+					<button onclick="jscript:enableAdmin()" title="This button will enable the Administrator account on-demand" name="btn_enableadmin">Enable Admin Account</button>
 				</td>
 			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
-			Click on the "Create Report" on windows 7 and windows 8 machine.
+            Click on the "Enable Admin Account" to enable the Administrator user account, on-demand.
+			</td>
+		</tr>			
+		<tr>
+			<td style="border: none; padding: 0px 0px 5px 0px; width: 15%;">
+				<div id="cdpbutton9">
+					<button onclick="jscript:CreateReport()" title="This button will display a Snapshot Report" name="btn_eac">Display Snapshot Report</button>
+				</td>
+			<td style="border: none; padding: 1px 0px 0px 0px; width:85%; vertical-align: top;">
+			   Click on the "Display Snapshot Report" on windows 7 or greater to display the Snapshot Report.
 			</td>
 		</tr>			
 	</table>	
@@ -478,7 +487,7 @@
    
    var ButtonCount = oButtonsArray.length;
    var oWPLogic;
-   /* Next initialization is the function name in [packagename]lib.js that runs when the "?run=1" parameter is included in the url */
+   /* Next initialization is the function name in [snapshotsvss]lib.js that runs when the "?run=1" parameter is included in the url */
    var RunableFunction = "runapp()";
    loadScript("../common/scripts/webpagelogic.js", function()
    {

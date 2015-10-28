@@ -1,3 +1,3 @@
 @echo off
-cscript.exe C:\Users\Public\CDP\SBSync\APPs\SnapshotsVSS\CreateSS.js  
+cscript.exe %1\CreateSS.js  
 pause

@@ -8,31 +8,9 @@ REM ----------------------------------------------------------------------------
 
 REM Set SS_Batch=C:\Users\Public\CDP\SBSync\APPs\SnapshotsVSS\CreateSSE.bat
 
-if "%1" == "Prod" (
-    Set VssApp_Path=C:\ProgramData\CDP\SnapBack\APPs\snapshotsvss
-    goto Continue
-)
-if "%1" == "Dev"  (
-    Set VssApp_Path=C:\Users\Public\cdp\SNAPBACK\APPS\SnapshotsVSS
-    goto Continue
- )
-if "%1" == "Test" (
-    Set VssApp_Path=C:\Users\Public\CDP\SBSync\APPs\SnapshotsVSS
-    goto Continue
-)
 
-IF EXIST C:\ProgramData\CDP\SnapBack\APPs\snapshotsvss\NUL (
-    Set VssApp_Path=C:\ProgramData\CDP\SnapBack\APPs\snapshotsvss
-    goto Continue
-)
-IF EXIST C:\Users\Public\cdp\SNAPBACK\APPS\SnapshotsVSS\NUL (
-    Set VssApp_Path=C:\Users\Public\cdp\SNAPBACK\APPS\SnapshotsVSS
-    goto Continue
-)
-IF EXIST C:\Users\Public\cdp\SBSync\APPS\SnapshotsVSS\NUL (
-    Set VssApp_Path=C:\Users\Public\cdp\SBSync\APPS\SnapshotsVSS
-    goto Continue
-)
+    Set VssApp_Path=%1
+    goto Continue)
 :Continue
 if "%VssApp_Path%" == "" (
     echo No Valid Path Found
