@@ -20,5 +20,6 @@ if "%VssApp_Path%" == "" (
 echo %VssApp_Path%
 REM SCHTASKS /Create /SC DAILY /TN CreateSS /TR C:\Users\Public\CDP\SBSync\APPs\SnapshotsVSS\CreateSSE.bat" "c:\ /ST 12:00 
 SCHTASKS /Create /SC DAILY /TN CreateSS /TR %VssApp_Path%\CreateSSE.bat" "c:\ /ST 12:00 /RL HIGHEST
-
+echo Your schedule is set to run at 12:00pm every day.
+pause
 :End
