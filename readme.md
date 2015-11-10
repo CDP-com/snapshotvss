@@ -8,6 +8,8 @@ Add any notes you may find pertinent
 
 Changelog
 ----
+11/10/2015, mstiles, added readme.txt changelog
+11/10/2015, mstiles, main.hta made resizable
 10/30/2015, cduncan, added missing file createss.ps1
 10/30/2015, cduncan, added user message to setscheduless.bat
 10/29/2015, mstiles, Corrected errors causing background colors to be off. Removed report file.
