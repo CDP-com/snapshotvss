@@ -13,6 +13,10 @@
 <!--                 END: Necessary Meta              -->
 <!-- ************************************************ -->
 
+
+
+
+
 <!-- ************************************************ -->
 <!-- START: Common Scripts - DO NOT EDIT THIS SECTION -->
 <!-- ************************************************ -->
@@ -193,6 +197,11 @@
       appPathName = loc.substring(1, loc.lastIndexOf('/'));
       //alert("TEMPORARY APP MESSAGE\n\nThe path this App is running from is "+appPathName+".\n\n\n(This temporary test message will be removed in approximately one week.)");
 </script>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
 <script type="text/javascript" src="../common/scripts/onlinecheck.js"></script>
 <!-- ************************************************ -->
 <!--               END: Required Scripts              -->
@@ -201,34 +210,15 @@
 
 
 <body>
-<!-- ************************************************ -->
-<!--        START: Header - Edit ONLY App Title       -->
-<!-- ************************************************ -->
-<script type="text/javascript" src="../common/template/header1.js"></script>
-	<!-- App Title - Edit This Section -->
-		Show Snapshot VSS
-			<!-- Include a Link to your App's Connect Page -->
-			<div>
-                <a id="devpage" href="http://factory.snapback-apps.com/app/previous-versions" title="The Factory page where the developers of this App Connect" style="text-decoration:none">Connect with Developers Here!</a>
-			<!-- End Connect Link -->
-			
-				<!-- Do Not Edit - This is Replaced on App Publication -->
-					&nbsp;|&nbsp;
-					<a id="webapp" href="http://snapback-apps.com/snapshotsvss/main.html" title="View this App on the Web and in your Browser">View App on the Web</a>
-				<!-- End App's Web Link -->
-   			</div>
-	<!-- End App Title -->
 
-<script type="text/javascript" src="../common/template/header2.js"></script>
-<!-- ************************************************ -->
-<!--                    END: Header                   -->
-<!-- ************************************************ -->
+
 
 
 
 <!-- ************************************************ -->
-<!--     START: Sidebar - DO NOT EDIT THIS SECTION    -->
+<!--  START: Left Sidebar - DO NOT EDIT THIS SECTION  -->
 <!-- ************************************************ -->
+
 <script type="text/javascript" src="../common/template/sidebar1.js"></script>
 
 	<script type="text/javascript">
@@ -237,121 +227,144 @@
 	</script>
 
 <script type="text/javascript" src="../common/template/sidebar2.js"></script>
+
 <!-- ************************************************ -->
-<!--                   END: Sidebar                   -->
+<!--                 END: Left Sidebar                -->
 <!-- ************************************************ -->
+
+
+
+
 
 <!-- ************************************************ -->
 <!--      START: Page Content - Edit this Section     -->
 <!-- ************************************************ -->
-<ul class="tabs">
-    <li><a href="#tab1" title="Run this App from Here">Home</a></li>
-    <li><a href="#tab2" title="This App is free to Use">Pricing</a></li>
-    <li><a href="#tab3" title="The technical details of what this App does">How it Works</a></li>
-    <li><a href="#tab4" title="Record of Each Committee's work and report to users">What's Certified</a></li>
-    <li><a href="#tab5" title="Here's how you can help make this App better">Improve this App</a></li>
-	<li><a href="#tab6" title="Here's how you can help the SnapBack Apps Project">SnapBack Apps Project</a></li>
-</ul>
+<div id="app-intro">
+	<div class="app-name">
+		Show Snapshot VSS
+	</div><!--End #app-name-->
+	
+	<div class="producer-credits">
+		<img src="../common/media/default-group-icon.png" alt="Group Name"/>
+		<a id="connect" href="http://factory.snapback-apps.com/app/previous-versions" title="Connect with the Developers of this App"><!--Include a Link to your App's Connect Page-->
+		Produced by the App Helpers Group<br />
+		Suggest / Contribute / Get Help
+		</a>
+	</div><!--End #producer-credits-->
+</div><!--End #app-intro-->
+
+<div id="tab-container">
+	<div id="tabnav">
+		<ul class="tabs">
+			<li><a href="#tab1" title="Run this App from Here">App Home</a></li>
+			<li><a href="#tab2" title="The technical details of what this App does">How it Works</a></li>
+			<li><a href="#tab3" title="Frequently Asked Questions">FAQ</a></li>
+			<li><a href="#tab4" title="This App is free to Use">Pricing</a></li>
+			<li><a href="#tab5" title="Record of Each Committee's work and report to users">What's Certified</a></li>
+		</ul>
+		<span></span>
+	</div><!--End #tabs-->
+</div><!--End #tab-container -->
+
+<div id="content-container">
 	<div id="tab1">
 			<p>This app will create a Microsoft Windows Shadow Copy of a volume.  Users typically have no easy or readily available way 
 			to create a Shadow Copy in Windows 7.  In Windows 8, users have no method at all to create a Shadow Copy.  
 			This app will make it possible for any regular user to create a Shadow Copy on demand.</p>	
 
 	<table class="main-table">
+
 		<tr>
-			<td colspan="2"><hr /></td>
-		</tr>
-		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td style="width: 25%;">
 				<div id="cdpbutton1">
 					<button onclick="jscript:createSS()" title="This button will create a Shadow Copy" name="btn_createss">Create a Shadow Copy</button>
 				</div>
 				</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
 			   Click on the "Create a Shadow Copy" to create a snapshot immediately, on-demand.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton2">
 					<button onclick="jscript:listSS()" title="This button will generate a list of Shadow Copies" name="btn_listss">List Shadow Copies</button>
 				</div>	
 				</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
 	     		Click on the "List Shadow Copies" to bring up a list of all snapshots available on your system.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton3">
 					<button onclick="jscript:scheduleSS()" title="This button will set up a schedule of Shadow Copies" name="btn_scheduless">Schedule Shadow Copies</button>
 				</div>	
 				</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
    			Click on "Schedule Shadow Copies" to schedule a snapshot to be created daily at 12:00pm.  Of course, for the schedule to work and take a snapshot, your machine must be running at the scheduled time.  Otherwise, a snapshot will not be taken.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton4">
 					<button onclick="jscript:showSS()" title="This button will show Shadow Storage" name="btn_showss">Show Shadow Storage</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
    			Click on the "Show Shadow Storage" to show the configuration of storage for your shadow copies.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton5">
 					<button onclick="jscript:setmaxSS()" title="This button will set the maximum number of Shadow Copies" name="btn_setmaxss">Set Max Shadow Copies</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
 			   Click on the "Set Max Shadow Copies" to set your max shadow copies.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton6">
 					<button onclick="jscript:setmaxCache()" title="This button will set maximum cache for Shadow Copies" name="btn_setmaxcache">Set Maximum Cache</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
    			Click on the "Set Maximum Cache" to set your maximum cache for VSS.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton7">
 					<button onclick="jscript:mountVss()" title="This button will Mount All VSS" name="btn_mountvss">Mount All Shadow Copies</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
 			   Click on the "Mount All Shadow Copies" to mount all Shadow Copies to c:\vss folder.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton8">
 					<button onclick="jscript:enableAdmin()" title="This button will enable the Administrator account on-demand" name="btn_enableadmin">Enable Admin Account</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
             Click on the "Enable Admin Account" to enable the Administrator user account, on-demand.
 			</td>
 		</tr>			
 		<tr>
-			<td style="border: none; padding: 0px 5px 5px 0px; width: 15%;">
+			<td>
 				<div id="cdpbutton9">
 					<button onclick="jscript:CreateReport()" title="This button will display a Snapshot Report" name="btn_eac">Display Snapshot Report</button>
 				</div>	
 			</td>
-			<td style="border: none; padding: 1px 5px 0px 0px; width:85%; vertical-align: top;">
+			<td>
 			   Click on the "Display Snapshot Report" on windows 7 or greater to display the Snapshot Report.
 			</td>
 		</tr>			
-	</table>	
+	</table>
 	</div><!--End Tab1-->
 				
 	<div id="tab2">
@@ -396,57 +409,87 @@
 	</div><!--End Tab3-->
 				
 	<div id="tab4">
-		<strong>Terms</strong>
-				
-		<p>You acknowledge and agree that any and all content you submit on this site shall remain the exclusive property of Columbia Data Products, Incorporated (CDP). This includes, but is not limited to, the applications, materials, products or processes You may create which are based on or utilize CDP Software, including the contents of Blogs, Forums, Groups, or any content not specifically listed but to be known as part of CDP.</p>
 
-		<p>You hereby release and covenant not to hold liable CDP or its Affiliates, or any of their licensees, assigns or successors, for any and all damages, liabilities, causes of action, judgments or claims (a) pertaining to any intellectual property You develop that is based on, uses, or relates to CDP Software; and (b) which otherwise may arise in connection with Your use of, reliance on, or reference to CDP Software. As between You and CDP, CDP and its licensors retain the IP Rights in and to CDP Software and any derivative works thereto created by or for CDP or its licensors.</p>
-
-		<p>Further, You agree that You will not remove, obscure, make illegible or alter any notices or indications of any IP Rights and/or CDP's rights and ownership thereof, whether such notice or indications are affixed on, contained in or otherwise connected to such materials.</p>
-
-		<strong>Expectations of Service</strong>
-
-		<p>CDP's role is to provide a platform for people who want to take advantage of the global community of customers and product experts. While CDP will monitor content and try to ensure the accuracy of the information, any information provided by CDP staff is offered "AS IS" with no warranties, and no rights are conferred. Each member assumes all the risk of use.</p>
+		<p><strong>No Cost to You.</strong></p>
+		
+		<p>All SnapBack Apps are free for both business and personal use, provided that the SnapBack Platform is "hand installed", by a user and not "mass installed".    However, for some apps they may be working with or modify another application, such as Microsoft Word, which is obviously not free.  Sometimes we might independently offer that application to you with a link to a separate page.  If and when we offer you the software, we warrant that to our best ability, we've fully disclosed which products in that category are best, the least cost prices with links, along with any dissenting opinions from contributors like you. </p>
+		
+		<p>For all our users, contributors, attributable sources, and other companies, we've prepared an easy to understand page that explains all our <a id="policiesterms" href="#" >Policies, Complete Terms, and Conditions of our SnapBack Apps, Platform, website, and our SnapBack Apps Factory</a> where they are produced.  Together, this page, the FAQ, and the discussions of users, contributors, and CDP should convince you that this project is worthy of your full support.</p>
+	  
 	</div><!--End Tab4-->
-
+						
 	<div id="tab5">
-		<strong>Thanks for Contributing</strong>
 		
-		<p>This app was created with developers working in collaboration with users like you.  We want your input and valuable contributions towards this app!  We'd like to hear ANYTHING, good or bad, that you have to say.  Feeback can include any improvements you wish to see in this app, suggested layout/content changes, and development enchancements.  We will publish editable excerpts from your input. </p>
-					
-		<strong>Let us help guide you.  How do you want to contribute?</strong>			
-			<table class="contribute-table">
-				<tr>
-					<td><strong><a id="idbug" href="http://107.22.239.74/app/previous-versions/issues-bugs/" title="Report a Bug or Issue Regarding this App">Report a Bug/Issue [insert link]</a></strong><br />Something not working right?  Notice any irregular behavior?  Report a bug or issue with as much detail as you want to include and help us improve the app.</td>
-					
-					<td><strong><a id="idnewfeature" href="http://107.22.239.74/app/previous-versions/request-new-features/" title="Request a New Feature for this App">Request a New Feature [insert link]</a></strong><br />Do you have a feature you would like see added to this app?  Report your idea to our team of developers and help see its inclusion in the next version.</td>
-				</tr>
-				<tr>
-					<td><strong><a id="idadmin" href="http://107.22.239.74/app/previous-versions/administration/" title="Work on or Learn How to Work on Development of this App">Work on App Development [insert link]</a></strong><br />Do you know a way to improve the app's performance?  Learn how to help this app's team of developers enhance their product with better coding, updated syntax, and more!</td>
-					
-					<td><strong><a id="iduicontent" href="http://107.22.239.74/app/previous-versions/administration/" title="Make Changes to the App's UI and Content">Improve the App's UI and Content [insert link]</a></strong><br />Think an image should be positioned in another way?  Think a paragraph needs to change?  Help the team create a UI and content the makes sense to users like you.</td>
-				</tr>
-				<tr>
-					<td colspan="2"><strong><a id="idapp" href="http://107.22.239.74/app/previous-versions/" title="Visit the App Page for this App">I'm not quite sure... [insert link]</a></strong><br />Don't know how to contribute?  No problem!  Visit the app's User/Dev page and learn about ALL of the ways your input and work can help make this a better app.</td>
-				</tr>
-			</table>
-					
-		<strong>About the SnapBack Apps Co-op</strong>	
-		
-		<p>SnapBack Apps is designed to allow regular users to work with developers in the hope of building and bettering the applications we use daily.  The SnapBack Apps Co-op is the platform where contributors communicate, design, and ultimately work together to accomplish this mission.</p>
+		<p>Each Committee has signed off on their part.  For more detail of each committees' policies and procedures, visit their home pages.</p>  
+
+		<table class="certification-table">
+			<tr>
+				<th>Certification Committee</th>
+				<th>Certification Details</th>
+			</tr>
+
+			<tr>
+				<td class="committee-name">CDP Certification</td>
+				<td>
+					<p>Released = [Date] | Version = [Version] | First Released = [Date] | Manifest Name = [Name] | By = [Author/Group]</p>
+					<p>NOTE: CDP will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="committee-name">Performance / System Impact</td>
+				<td>
+					<p>RAM = [Details] | DISK = [Details] | Runtime/CPU = [Details]</p>
+					<p>NOTE: the Performance/System Impact Committee will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="committee-name">Security/Logging/User Rights/Locations</td>
+				<td>
+					<p>
+						Security:[Details]<br /> 
+						Logging: [Details]<br />
+						Users: [Details]<br />
+						Rights required: [Details]<br />
+						Locations: [Details]<br />
+					</p>
+					<p>NOTE: the Security/Logging/User Rights/Locations Committee will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="committee-name">Safety/Conflicts/Compatibility/Expertise</td>
+				<td>
+					<p>Safe = [Details] | Conflicts = [Details] | Compatibility = [Details] | UserType = [Details]</p>
+					<p>NOTE: the Safety/Conflicts/Compatibility/Expertise Committee will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="committee-name">Legal/Attribution/Liability</td>
+				<td>
+					<p>Attributed = [Details] | DMCA Issues = [Details] | Damage = [Details]</p>
+					<p>NOTE: the Legal/Attribution/Liability Committee will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="committee-name">Monetization/Privacy</td>
+				<td>
+					<p>Monetization = [Details] | Privacy Issues = [Details]</p>
+					<p>NOTE: the Monetization/Privacy Committee will include any notes directed at the user here.</p>
+				</td>
+			</tr>
+		</table>
+				
 	</div><!--End Tab5-->
 	
-	<div id="tab6">
-		<p>To improve the SnapBack Apps project, try the following options:</p>
-		
-		<p><strong>Tell others:</strong><br/>
-		Show how a SnapBack App is a solution to an asked question on sites like SuperUser.com.  Many sites offer written solutions that advise, if you hand-type or apply the fix.  Often, the solutions published vary in quality, method, have no error handling, and require more context and understanding than most users have. By simply referring them to that specific App's page, users on that site can simply choose to and safely apply that fix with a single click, (or first install SnapBack).  Read "best practices" and "example answers" to a posted problem, using links to a specific SnapBack App page.</p> 
 
-		<p><strong>Contribute to our Factory:</strong><br/>
-		This app was created with developers working in collaboration with users like you. We want your input and valuable contributions towards this app! We'd like to hear ANYTHING, good or bad, that you have to say. (We will NEVER hide ANY feedback.)  Feedback can include any improvements you wish to see in this app, suggested layout/content changes, and development enhancements. We will generally publish edited excerpts from your input.</p>
-      		
-      	<p><strong>The SnapBack Apps Factory is a platform where</strong> regular users interact with, or become App contributors and developers themselves.  Most technology products initially frustrates users unnecessarily.  If new versions were produced daily, users and developers were constantly communicating, products would quickly evolve to work perfectly.  SnapBack Apps' mission is to modify how any existing hardware and software interacts with ordinary users.   Our Factory connects users, contributors and developers in near real time to create or improve SnapBack Apps.  Changes that are apparently required are quickly communicated, applied and deployed to all users within hours.  Eventually, all changes that any user would ever want, are created and deployed.  The SnapBack Apps Factory platform is where contributors and users of all kinds communicate, design, and ultimately work together to accomplish this mission..</p>
-	</div><!--End Tab6-->
+
+
+
+</div><!--End content-container--> 
 <!-- ************************************************ -->
 <!--                 END: Page Content                -->
 <!-- ************************************************ -->
