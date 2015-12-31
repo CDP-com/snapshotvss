@@ -180,8 +180,12 @@
 		}
       
       function pageScroll() {
-         window.scrollTo(0,top);
-         scrolldelay = setTimeout('pageScroll()', 200);
+         if ( !scrolled )
+         {
+            scrolled = true;
+            window.scrollTo(0,top);
+            scrolldelay = setTimeout('pageScroll()', 200);
+         }
       }
 
       window.onload = function(){
@@ -201,6 +205,8 @@
 <script>
     $(document).ready(function() {
         $('.menu-link').bigSlide();
+         scrolled = false;
+         setTimeout('pageScroll();', 100);
     });
 </script>
 <script type="text/javascript" src="../common/scripts/onlinecheck.js"></script>
